@@ -49,9 +49,9 @@ export default function Home() {
 
       <div>
         <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center bg-center BackG" style={{ backgroundImage: `url(/public/assets/blur-background.png)` }}>
+        
 
-
-          <img src='/assets/blur-background.png' alt="" className='className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center bg-center' />
+        <img src='/assets/blur-background.png' alt=""  className='className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center bg-center'/>
           {/* Titulos */}
           <div className="max-w-[1100px] w-full flex items-center justify-between mt-20 mx-auto">
             <div className='header'>
