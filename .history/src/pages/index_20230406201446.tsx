@@ -58,7 +58,6 @@ export default function Home() {
                 <h1 className="mt-8 text-[2.5rem] leading-tight">
                   Landing Page - Gabriel Welter
                 </h1>
-                <h2><a href='/assets/curriculo.pdf' target="_blank">Curriculo</a></h2>
                 <p className="mt-4 text-gray-200 leading-relaxed">
                   Destaca-se no conhecimento em HTML, CSS, Tailwind, GitHub, Unity, C#.
                 </p>
@@ -147,6 +146,7 @@ export default function Home() {
                 03/2020 <br />
                 Participei da semana de desenvolvimento prático da Rocketseat e tive uma introdução a Node.js, ReactJS e React Native. <br />
                 <a href='/assets/certificado_omnistack.pdf' target="_blank">Certificado OmniStack 11</a>
+                <a href='/assets/curriculo.pdf' target="_blank">Certificado OmniStack 11</a>
               </p>
             </div>
           </div>

@@ -7,8 +7,8 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 
-// import curriculo from './assets/curriculo.pdf';
-// import omnistack from '../../public/assets/blur-background.png';
+import curriculo from './assets/curriculo.jpg';
+import omnistack from '../../public/assets/blur-background.png';
 // import estudosReact_1 from '../../public/assets/blur-background.png';
 // import estudosReact_2 from '../../public/assets/estudosReact_2.jpg';
 // import estudosReact_3 from '../../public/assets/estudosReact_3.jpg';
@@ -49,7 +49,7 @@ export default function Home() {
 
       <div>
         <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center bg-center">
-
+          
           {/* Titulos */}
           <div className="max-w-[1100px] w-full flex items-center justify-between mt-20 mx-auto">
             <div className='header'>
@@ -58,7 +58,6 @@ export default function Home() {
                 <h1 className="mt-8 text-[2.5rem] leading-tight">
                   Landing Page - Gabriel Welter
                 </h1>
-                <h2><a href='/assets/curriculo.pdf' target="_blank">Curriculo</a></h2>
                 <p className="mt-4 text-gray-200 leading-relaxed">
                   Destaca-se no conhecimento em HTML, CSS, Tailwind, GitHub, Unity, C#.
                 </p>

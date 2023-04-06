@@ -57,8 +57,9 @@ export default function Home() {
 
                 <h1 className="mt-8 text-[2.5rem] leading-tight">
                   Landing Page - Gabriel Welter
+
+                  <a href='/assets/curriculo.pdf' target="_blank">Curriculo</a>
                 </h1>
-                <h2><a href='/assets/curriculo.pdf' target="_blank">Curriculo</a></h2>
                 <p className="mt-4 text-gray-200 leading-relaxed">
                   Destaca-se no conhecimento em HTML, CSS, Tailwind, GitHub, Unity, C#.
                 </p>

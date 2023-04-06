@@ -618,7 +618,7 @@ video {
 }
 
 .bg-blur {
-  background-image: url(/public/assets/blur-background.png);
+  background-image: url(/assets/blur-background.png);
 }
 
 .bg-cover {
