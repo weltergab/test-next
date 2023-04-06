@@ -9,13 +9,14 @@ import reactLogo from './assets/react.svg'
 
 import curriculo from './assets/curriculo.jpg';
 import omnistack from '../../public/assets/blur-background.png';
-// import estudosReact_1 from '../../public/assets/blur-background.png';
-// import estudosReact_2 from '../../public/assets/estudosReact_2.jpg';
-// import estudosReact_3 from '../../public/assets/estudosReact_3.jpg';
+import estudosReact_1 from '../../public/assets/blur-background.png';
+import estudosReact_2 from '../../public/assets/estudosReact_2.jpg';
+import estudosReact_3 from '../../public/assets/estudosReact_3.jpg';
 import mockup from '../../public/assets/code-mockup.png';
 
 import ImageComponent from '../components/ImageComponent';
 
+import BackG from '../../public/assets/blur-background.png'
 
 const inter = Inter({ subsets: ['latin'] })
 

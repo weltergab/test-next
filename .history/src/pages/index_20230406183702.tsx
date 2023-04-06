@@ -6,20 +6,34 @@ import Link from 'next/link'
 
 import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
+import ExpandableImage from '../components/ExpandableImage';
 
 import curriculo from './assets/curriculo.jpg';
 import omnistack from '../../public/assets/blur-background.png';
-// import estudosReact_1 from '../../public/assets/blur-background.png';
-// import estudosReact_2 from '../../public/assets/estudosReact_2.jpg';
-// import estudosReact_3 from '../../public/assets/estudosReact_3.jpg';
+import estudosReact_1 from '../../public/assets/blur-background.png';
+import estudosReact_2 from '../../public/assets/estudosReact_2.jpg';
+import estudosReact_3 from '../../public/assets/estudosReact_3.jpg';
 import mockup from '../../public/assets/code-mockup.png';
 
 import ImageComponent from '../components/ImageComponent';
 
-
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
+  // useEffect(() => {
+  //   ScrollReveal().reveal('.header',
+  //     {
+  //       delay: 600,
+  //       distance: '200px',
+  //       origin: 'left',
+  //       // rotate: { x: 20, z: 20 } 
+  //     }
+  //   );
+  //   ScrollReveal().reveal('.publication, .footer', { delay: 200, distance: '200px' });
+  //   ScrollReveal().reveal('.curriculo', { delay: 1000, distance: '200px', origin: 'right', rotate: { x: 20, z: 20 } });
+  // }, []);
+
 
   const [count, setCount] = useState(0)
 
@@ -42,16 +56,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className=''>
+      <ImageComponent imageSrc="/imagem.png" />
+        <div className='bg-black'>
           <Link href="/sobre">Ir para pagina Sobre</Link>
         </div>
       </main>
 
       <div>
-        <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center bg-center BackG" style={{ backgroundImage: `url(/public/assets/blur-background.png)` }}>
-        
+        <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center">
 
-        <img src='/assets/blur-background.png' alt=""  className='className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center bg-center'/>
           {/* Titulos */}
           <div className="max-w-[1100px] w-full flex items-center justify-between mt-20 mx-auto">
             <div className='header'>
@@ -61,10 +74,11 @@ export default function Home() {
                   Landing Page - Gabriel Welter
                 </h1>
                 <p className="mt-4 text-gray-200 leading-relaxed">
+                  Procuro oportunidade de trabalho meio turno com Frontend. <br />
                   Destaca-se no conhecimento em HTML, CSS, Tailwind, GitHub, Unity, C#.
                 </p>
                 <p className="mt-4 text-gray-200 leading-relaxed">
-                  Este site foi desenvolvido com HTML, CSS, Tailwind, React, TS, Next e a hospedagem foi feita utilizando o serviço da Vercel.
+                  Este site foi desenvolvido com HTML, CSS, Tailwindcss, ReactJS, TS, Vite e a hospedagem foi feita utilizando o serviço da Vercel.
                 </p>
                 <h1 className="mt-8 text-[2.5rem] leading-tight italic">
                   <strong className="text-blue-500">Em construção...</strong>
@@ -73,9 +87,9 @@ export default function Home() {
                   Os links para todos os sites e projetos no git ainda serão adicionados.
                 </p>
               </div>
-            </div>
-          </div>
-
+              </div>
+              </div>
+          
 
           {/* Publicacoes */}
           <div className="publication max-w-[1100px] w-full flex flex-col justify-between mt-20 mx-auto"> {/* items-center  */}
@@ -119,9 +133,18 @@ export default function Home() {
                 #javascript #react #frontend
               </p>
               <div className='flex justify-between mt-5'>
-                <ImageComponent imageSrc="/assets/estudosReact_1.png" />
-                <ImageComponent imageSrc="/assets/estudosReact_2.jpg" />
-                <ImageComponent imageSrc="/assets/estudosReact_3.jpg" />
+                <ExpandableImage
+                  smallImageSrc={estudosReact_1}
+                  largeImageSrc={estudosReact_1}
+                />
+                <ExpandableImage
+                  smallImageSrc={estudosReact_2}
+                  largeImageSrc={estudosReact_2}
+                />
+                <ExpandableImage
+                  smallImageSrc={estudosReact_3}
+                  largeImageSrc={estudosReact_3}
+                />
               </div>
 
             </div>

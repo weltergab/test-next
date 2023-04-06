@@ -9,9 +9,9 @@ import reactLogo from './assets/react.svg'
 
 import curriculo from './assets/curriculo.jpg';
 import omnistack from '../../public/assets/blur-background.png';
-// import estudosReact_1 from '../../public/assets/blur-background.png';
-// import estudosReact_2 from '../../public/assets/estudosReact_2.jpg';
-// import estudosReact_3 from '../../public/assets/estudosReact_3.jpg';
+import estudosReact_1 from '../../public/assets/blur-background.png';
+import estudosReact_2 from '../../public/assets/estudosReact_2.jpg';
+import estudosReact_3 from '../../public/assets/estudosReact_3.jpg';
 import mockup from '../../public/assets/code-mockup.png';
 
 import ImageComponent from '../components/ImageComponent';
@@ -48,10 +48,8 @@ export default function Home() {
       </main>
 
       <div>
-        <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center bg-center BackG" style={{ backgroundImage: `url(/public/assets/blur-background.png)` }}>
-        
+        <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center bg-center">
 
-        <img src='/assets/blur-background.png' alt=""  className='className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center bg-center'/>
           {/* Titulos */}
           <div className="max-w-[1100px] w-full flex items-center justify-between mt-20 mx-auto">
             <div className='header'>

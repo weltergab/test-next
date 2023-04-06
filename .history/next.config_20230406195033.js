@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['localhost'], // aqui você pode adicionar o domínio ou endereço IP onde as imagens estão hospedadas
+    domains: ['example.com'], // aqui você pode adicionar o domínio ou endereço IP onde as imagens estão hospedadas
   },
 };
 
