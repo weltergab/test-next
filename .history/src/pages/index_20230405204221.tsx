@@ -8,12 +8,12 @@ import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import ExpandableImage from '../components/ExpandableImage';
 
-import curriculo from './assets/curriculo.jpg';
-import omnistack from '../../public/assets/blur-background.png';
-import estudosReact_1 from '../../public/assets/blur-background.png';
-import estudosReact_2 from '../../public/assets/estudosReact_2.jpg';
-import estudosReact_3 from '../../public/assets/estudosReact_3.jpg';
-import mockup from '../../public/assets/code-mockup.png';
+import curriculo from '../assets/curriculo.jpg';
+// import omnistack from '../assets/certificado_omnistack.pdf';
+import estudosReact_1 from './assets/estudosReact_1.png';
+import estudosReact_2 from './assets/estudosReact_2.jpg';
+import estudosReact_3 from './assets/estudosReact_3.jpg';
+import mockup from './assets/code-mockup.png';
 
 // import ScrollReveal from 'scrollreveal';
 
@@ -162,6 +162,9 @@ export default function Home() {
                   largeImageSrc={estudosReact_3}
                 />
               </div>
+              <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
 
             </div>
           </div>
@@ -207,9 +210,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className='bg-black'>
-          <Link href="/sobre">Ir para pagina Sobre</Link>
-        </div>
+        <h1 className='bg-green-800'>Test</h1>
+
+
+        <Link href="/sobre">Ir para pagina Sobre</Link>
       </main>
     </>
   )

@@ -6,33 +6,33 @@ import Link from 'next/link'
 
 import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
-import ExpandableImage from '../components/ExpandableImage';
+import ExpandableImage from './components/ExpandableImage';
 
-import curriculo from './assets/curriculo.jpg';
-import omnistack from '../../public/assets/blur-background.png';
-import estudosReact_1 from '../../public/assets/blur-background.png';
-import estudosReact_2 from '../../public/assets/estudosReact_2.jpg';
-import estudosReact_3 from '../../public/assets/estudosReact_3.jpg';
-import mockup from '../../public/assets/code-mockup.png';
+import curriculo from './assets/curriculo.pdf';
+import omnistack from './assets/certificado_omnistack.pdf';
+import estudosReact_1 from './assets/estudosReact_1.png';
+import estudosReact_2 from './assets/estudosReact_2.jpg';
+import estudosReact_3 from './assets/estudosReact_3.jpg';
+import mockup from './assets/code-mockup.png';
 
-// import ScrollReveal from 'scrollreveal';
+import ScrollReveal from 'scrollreveal';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
 
-  // useEffect(() => {
-  //   ScrollReveal().reveal('.header',
-  //     {
-  //       delay: 600,
-  //       distance: '200px',
-  //       origin: 'left',
-  //       // rotate: { x: 20, z: 20 } 
-  //     }
-  //   );
-  //   ScrollReveal().reveal('.publication, .footer', { delay: 200, distance: '200px' });
-  //   ScrollReveal().reveal('.curriculo', { delay: 1000, distance: '200px', origin: 'right', rotate: { x: 20, z: 20 } });
-  // }, []);
+  useEffect(() => {
+    ScrollReveal().reveal('.header',
+      {
+        delay: 600,
+        distance: '200px',
+        origin: 'left',
+        // rotate: { x: 20, z: 20 } 
+      }
+    );
+    ScrollReveal().reveal('.publication, .footer', { delay: 200, distance: '200px' });
+    ScrollReveal().reveal('.curriculo', { delay: 1000, distance: '200px', origin: 'right', rotate: { x: 20, z: 20 } });
+  }, []);
 
 
   const [count, setCount] = useState(0)
@@ -49,8 +49,8 @@ export default function Home() {
 
   return (
     <>
-      {/* ScrollReveal().reveal('.headline'); */}
-
+    <script>ScrollReveal().reveal('.headline');</script>
+    
       <div>
 
         <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center">
@@ -76,8 +76,7 @@ export default function Home() {
                 <p className="mt-4 text-gray-200 leading-relaxed">
                   Os links para todos os sites e projetos no git ainda serão adicionados.
                 </p>
-              </div></div></div>
-          {/* <p className="mt-4 text-gray-200 leading-relaxed">
+                {/* <p className="mt-4 text-gray-200 leading-relaxed">
         Quero fazer um "gráfico" com meus conhecimentos. <br />
 
         Usei pouco - 1 Estrela <br />
@@ -98,14 +97,116 @@ export default function Home() {
         ReactJS - 1 <br />
         Unreal - 1 <br />
       </p>
+      <p>
+        Trabalho em equipe
+        Gerenciamento de Equipe
+      </p>
 
-     
+      <p>
         Talvez um gráfico de personalidade aqui?
         Com coisas boas de cada lado do gráfico, cada item algo é bom mas outro é ruim
-      
-        
-            
-          </div> */}
+      </p>*/}
+                {/* <div className="flex max-w-[320px]">
+          <div>
+            <p className='pr-10'>Unity e C#</p>
+          </div>
+          <div className='flex items-center'>
+            <div className="bg-sky-100 aspect-square w-20 h-3 ml-1 rounded"></div>
+            <div className="bg-sky-200 aspect-square w-20 h-3 ml-1 rounded"></div>
+            <div className="bg-sky-300 aspect-square w-20 h-3 ml-1 rounded"></div>
+            <div className="bg-sky-400 aspect-square w-20 h-3 ml-1 rounded"></div>
+          </div>
+        </div>
+        <div className="flex max-w-[320px]">
+          <div>
+            <p className='pr-10'>HTML</p>
+          </div>
+          <div className='flex'>
+            <div className="bg-sky-100 aspect-square w-10 h-3 m-1 rounded"></div>
+            <div className="bg-sky-200 aspect-square w-10 h-3 m-1 rounded"></div>
+            <div className="bg-sky-300 aspect-square w-10 h-3 m-1 rounded"></div>
+            <div className="bg-sky-400 aspect-square w-10 h-3 m-1 rounded"></div>
+          </div>
+        </div>
+        <div className="flex max-w-[320px]">
+          <div>
+            <p className='pr-10'>GitHub</p>
+          </div>
+          <div className='flex'>
+            <div className="bg-sky-100 aspect-square w-10 h-3 m-1 rounded"></div>
+            <div className="bg-sky-200 aspect-square w-10 h-3 m-1 rounded"></div>
+            <div className="bg-sky-300 aspect-square w-10 h-3 m-1 rounded"></div>
+            <div className="bg-sky-400 aspect-square w-10 h-3 m-1 rounded"></div>
+          </div>
+        </div>
+        <div className="flex max-w-[320px]">
+          <div>
+            <p className='pr-10'>CSS</p>
+          </div>
+          <div className='flex'>
+            <div className="bg-sky-100 aspect-square w-10 h-3 m-1 rounded"></div>
+            <div className="bg-sky-200 aspect-square w-10 h-3 m-1 rounded"></div>
+            <div className="bg-sky-300 aspect-square w-10 h-3 m-1 rounded"></div>
+          </div>
+        </div>
+        <div className="flex max-w-[320px]">
+          <div>
+            <p className='pr-10'>TailwindCSS</p>
+          </div>
+          <div className='flex'>
+            <div className="bg-sky-100 aspect-square w-10 h-3 m-1 rounded"></div>
+            <div className="bg-sky-200 aspect-square w-10 h-3 m-1 rounded"></div>
+          </div>
+        </div>
+        <div className="flex max-w-[320px]">
+          <div><p className='pr-10'>Pyton</p></div>
+          <div className='flex'>
+            <div className="bg-sky-100 aspect-square w-10 h-3 m-1 rounded"></div>
+            <div className="bg-sky-200 aspect-square w-10 h-3 m-1 rounded"></div>
+          </div>
+        </div>
+        <div className="flex max-w-[320px]">
+          <div><p className='pr-10'>C e C++</p></div>
+          <div className='flex'>
+            <div className="bg-sky-100 aspect-square w-10 h-3 m-1 rounded"></div>
+            <div className="bg-sky-200 aspect-square w-10 h-3 m-1 rounded"></div>
+          </div>
+        </div>
+        <div className="flex max-w-[320px]">
+          <div><p className='pr-10'>ReactJS</p></div>
+          <div className='flex'>
+            <div className="bg-sky-100 aspect-square w-10 h-3 m-1 rounded"></div>
+          </div>
+        </div>
+        <div className="flex max-w-[320px]">
+          <div><p className='pr-10'>JS</p></div>
+          <div className='flex'>
+            <div className="bg-sky-100 aspect-square w-10 h-3 m-1 rounded"></div>
+          </div>
+        </div>
+        <div className="flex max-w-[320px]">
+          <div><p className='pr-10'>TS</p></div>
+          <div className='flex'>
+            <div className="bg-sky-100 aspect-square w-10 h-3 m-1 rounded"></div>
+          </div>
+        </div>
+        <div className="flex max-w-[320px]">
+          <div><p className='pr-10'>Unreal</p></div>
+          <div className='flex'>
+            <div className="bg-sky-100 aspect-square w-10 h-3 m-1 rounded"></div>
+          </div>
+        </div>
+*/}
+
+
+
+              </div>
+            </div>
+            <div className="curriculo p-8 bg-gray-700 border border-gray-500 rounded">
+              <strong className="text-2xl mb-6 block">Veja meu currículo</strong>
+              <a href={curriculo} target="_blank">Abrir PDF em nova aba</a>
+            </div>
+          </div>
 
           {/* Publicacoes */}
           <div className="publication max-w-[1100px] w-full flex flex-col justify-between mt-20 mx-auto"> {/* items-center  */}
@@ -162,6 +263,9 @@ export default function Home() {
                   largeImageSrc={estudosReact_3}
                 />
               </div>
+              <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
 
             </div>
           </div>
@@ -198,7 +302,23 @@ export default function Home() {
         </div>
 
 
-
+        {/* <div>
+  <a href="https://vitejs.dev" target="_blank">
+    <img src="/vite.svg" className="logo" alt="Vite logo" />
+  </a>
+  <a href="https://reactjs.org" target="_blank">
+    <img src={reactLogo} className="logo react" alt="React logo" />
+  </a>
+</div>
+<h1>Vite + React</h1>
+<div className="card">
+  <button onClick={() => setCount((count) => count + 1)}>
+    count is {count}
+  </button>
+  <p>
+    Edit <code>src/App.tsx</code> and save to test HMR
+  </p>
+</div> */}
       </div>
       <Head>
         <title>Create Next App</title>
@@ -207,9 +327,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className='bg-black'>
-          <Link href="/sobre">Ir para pagina Sobre</Link>
-        </div>
+        <h1 className='bg-green-800'>Test</h1>
+
+
+        <Link href="/sobre">Ir para pagina Sobre</Link>
       </main>
     </>
   )

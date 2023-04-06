@@ -208,8 +208,11 @@ export default function Home() {
       </Head>
       <main>
         <div className='bg-black'>
-          <Link href="/sobre">Ir para pagina Sobre</Link>
+
         </div>
+
+
+        <Link href="/sobre">Ir para pagina Sobre</Link>
       </main>
     </>
   )

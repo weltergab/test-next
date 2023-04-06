@@ -207,9 +207,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className='bg-black'>
-          <Link href="/sobre">Ir para pagina Sobre</Link>
-        </div>
+        <h1 className='bg-green-800'>Test</h1>
+
+
+        <Link href="/sobre">Ir para pagina Sobre</Link>
       </main>
     </>
   )
