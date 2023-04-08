@@ -47,6 +47,7 @@ export default function Home({ technologies, series }) {
       </main>
 
 
+      <Cover technologies={technologies} />
 
 
 
@@ -185,7 +186,29 @@ export default function Home({ technologies, series }) {
   )
 }
 
-import { getAllTechnologies } from '../../lib/dato-cms';
+
+import { getAllTechnologies, getAllSeries } from '../../lib/dato-cms';
+
+const Cover = ({ technologies }) => {
+  const [currentTechnologies, setTechnologies] = useState(technologies);
+
+  const handleShowAllTechnologies = () => {
+    const tecs = currentTechnologies.map((t) => {
+      t.defaultVisible = true;
+      return t;
+    });
+    setTechnologies(tecs);
+  };
+
+  const hiddenTechnologies = currentTechnologies?.filter(
+    (t) => !t.defaultVisible,
+  ).length;
+
+  return (
+    <div></div>
+  );
+};
+
 
 export const getStaticProps = async () => {
   const technologies = await getAllTechnologies();

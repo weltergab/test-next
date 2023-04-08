@@ -45,11 +45,12 @@ export default function Home({ technologies, series }) {
           <Link href="/sobre">Ir para pagina Sobre</Link>
         </div>
       </main>
-
-
-
-
-
+      
+      
+        <Cover technologies={technologies} />
+        
+      
+    
       <div>
         <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center bg-center">
           {/* Titulos */}
@@ -168,24 +169,34 @@ export default function Home({ technologies, series }) {
           </div>
         </div>
       </div>
-      <div className="technologies">
-        <h1>{technologies[0].name}</h1>
-        <img src={technologies[0].logo.url} alt={technologies[0].name} />
-        
-      </div>
-      {/* <div className="technologies">
-        {technologies.map((tech) => (
-          <div key={tech.id}>
-            <h1>{tech.name}</h1>
-            <img src={tech.logo.url} alt={tech.name} />
-          </div>
-        ))}
-      </div> */}
+<div>{technologies.id}</div>
     </>
   )
 }
 
-import { getAllTechnologies } from '../../lib/dato-cms';
+
+import { getAllTechnologies, getAllSeries } from '../../lib/dato-cms';
+
+const Cover = ({ technologies }) => {
+  const [currentTechnologies, setTechnologies] = useState(technologies);
+
+  const handleShowAllTechnologies = () => {
+    const tecs = currentTechnologies.map((t) => {
+      t.defaultVisible = true;
+      return t;
+    });
+    setTechnologies(tecs);
+  };
+
+  const hiddenTechnologies = currentTechnologies?.filter(
+    (t) => !t.defaultVisible,
+  ).length;
+
+  return (          
+    <div></div>      
+  );
+};
+
 
 export const getStaticProps = async () => {
   const technologies = await getAllTechnologies();

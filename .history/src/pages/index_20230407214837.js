@@ -15,11 +15,11 @@ import { useEffect, useState } from 'react';
 // import mockup from '../../public/assets/code-mockup.png';
 
 import ImageComponent from '../components/ImageComponent';
+import { getAllTechnologies } from '../../lib/dato-cms';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export default function Home({ technologies, series }) {
-
+export default function Home({ technologies }) {
   const [count, setCount] = useState(0);
   const [showImage, setShowImage] = useState(false);
 
@@ -45,10 +45,6 @@ export default function Home({ technologies, series }) {
           <Link href="/sobre">Ir para pagina Sobre</Link>
         </div>
       </main>
-
-
-
-
 
       <div>
         <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center bg-center">
@@ -168,32 +164,17 @@ export default function Home({ technologies, series }) {
           </div>
         </div>
       </div>
-      <div className="technologies">
-        <h1>{technologies[0].name}</h1>
-        <img src={technologies[0].logo.url} alt={technologies[0].name} />
-        
-      </div>
-      {/* <div className="technologies">
-        {technologies.map((tech) => (
-          <div key={tech.id}>
-            <h1>{tech.name}</h1>
-            <img src={tech.logo.url} alt={tech.name} />
-          </div>
-        ))}
-      </div> */}
+
     </>
   )
 }
 
-import { getAllTechnologies } from '../../lib/dato-cms';
-
 export const getStaticProps = async () => {
   const technologies = await getAllTechnologies();
-
   return {
     props: {
       technologies,
     },
     revalidate: 120,
-  };
-};
+  }
+}

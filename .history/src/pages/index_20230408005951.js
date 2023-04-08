@@ -47,6 +47,7 @@ export default function Home({ technologies, series }) {
       </main>
 
 
+      <Cover technologies={technologies} />
 
 
 
@@ -185,7 +186,11 @@ export default function Home({ technologies, series }) {
   )
 }
 
-import { getAllTechnologies } from '../../lib/dato-cms';
+
+import { getAllTechnologies, getAllSeries } from '../../lib/dato-cms';
+
+
+
 
 export const getStaticProps = async () => {
   const technologies = await getAllTechnologies();
