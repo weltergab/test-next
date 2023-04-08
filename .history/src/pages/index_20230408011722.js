@@ -1,14 +1,24 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
+
 import Link from 'next/link';
+
 import { useEffect, useState } from 'react';
+
+
+// import curriculo from './assets/curriculo.pdf';
+// import omnistack from '../../public/assets/blur-background.png';
+// import estudosReact_1 from '../../public/assets/blur-background.png';
+// import estudosReact_2 from '../../public/assets/estudosReact_2.jpg';
+// import estudosReact_3 from '../../public/assets/estudosReact_3.jpg';
+// import mockup from '../../public/assets/code-mockup.png';
+
 import ImageComponent from '../components/ImageComponent';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home({ technologies }) {
-
   return (
     <>
       <Head>

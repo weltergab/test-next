@@ -1,14 +1,17 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
+
 import Link from 'next/link';
+
 import { useEffect, useState } from 'react';
+
 import ImageComponent from '../components/ImageComponent';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home({ technologies }) {
-
+  
   return (
     <>
       <Head>
