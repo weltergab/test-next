@@ -18,7 +18,7 @@ import ImageComponent from '../components/ImageComponent';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export default function Home({ technologies }) {
+export default function Home({ technologies, series }) {
 
   const [count, setCount] = useState(0);
   const [showImage, setShowImage] = useState(false);
